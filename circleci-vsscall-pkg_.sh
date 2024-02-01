@@ -38,16 +38,16 @@ function pkg_darwin() {
 #==========================================
 
 # This env should have been set by a prior script
-if [ -n $CIRCLECI_DIAG_OS ]
+if [ -n $CIRCLECI_VSSCALL_OS ]
 then
-  echo "The OS is $CIRCLECI_DIAG_OS"
-  if [ $CIRCLECI_DIAG_OS == "Linux" ]
+  echo "The OS is $CIRCLECI_VSSCALL_OS"
+  if [ $CIRCLECI_VSSCALL_OS == "Linux" ]
   then
     pkg_linux
     pkg_yarn
     pkg_npm
 
-  elif [ $CIRCLECI_DIAG_OS == "Darwin" ]
+  elif [ $CIRCLECI_VSSCALL_OS == "Darwin" ]
   then
     pkg_darwin
     pkg_yarn
