@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
 # Get OS
-export CIRCLECI_DIAG_OS=$(uname -s)
-echo "The OS is $CIRCLECI_DIAG_OS"
+export CIRCLECI_VSSCALL_OS=$(uname -s)
+echo "The OS is $CIRCLECI_VSSCALL_OS"
 
 BASE=$(basename ${0##*/} .sh)
 
 echo "My name is $BASE"
 
 echo "I have found the following modules:"
-for f in $BASE.*.sh
+for f in $BASE-*.sh
 do
 	echo "Located module $f"
 
