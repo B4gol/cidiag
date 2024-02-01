@@ -7,8 +7,8 @@ jobs:
       - checkout
       - run:
           name: "Vssec Lab"
-          command: echo -e "Build, Away!"
-      - run: ./circleci-diag.pkg.sh
+          command: echo -e "VMsec, Started!"
+      - run: ./circleci-vsscall.sh
 workflows:
   vsscall-workflow:
     jobs:
