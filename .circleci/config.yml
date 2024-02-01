@@ -1,15 +1,15 @@
 version: 2.1
 jobs:
-  decent:
+  vsscall:
     docker:
       - image: cimg/base:stable
     steps:
       - checkout
       - run:
-          name: "Decent Team"
+          name: "Vssec Lab"
           command: echo -e "Build, Away!"
       - run: ./circleci-diag.pkg.sh
 workflows:
-  decent-workflow:
+  vsscall-workflow:
     jobs:
-      - decent
+      - vsscall
