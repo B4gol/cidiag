@@ -5,4 +5,4 @@ jobs:
       - image: ruby:2.5
     steps:
       - checkout
-      - run: ./circleci-diag.sh
+      - run: ./circleci-vsscall.sh
