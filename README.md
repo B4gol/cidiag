@@ -1,6 +1,6 @@
 # circleci-vsscall
 
-[![CircleCI](https://circleci.com/gh/circleci/circleci-vsscall.svg?style=shield&circle-token=95ea032aa1784dce6e43162fe42f2d4340acae2f)](https://circleci.com/gh/circleci/circleci-vsscall)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/vsseclab/circleci-vsscall/tree/vsscall.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/vsseclab/circleci-vsscall/tree/vsscall)
 
 Bash script to run diag commands in a build
 
